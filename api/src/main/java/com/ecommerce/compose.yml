@@ -3,10 +3,13 @@ version: "3.1"
 
 services:
   db:
-    image: mysql
+    image: mysql:8.0.39-debian
     restart: always
     environment:
       MYSQL_HOST: 0.0.0.0
       MYSQL_USER: nordin
+      MYSQL_PASSWORD: nordin
       MYSQL_ROOT_PASSWORD: nordin
       MYSQL_DATABASE: ecommerce
+    ports:
+      - "3306:3306"

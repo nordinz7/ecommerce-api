@@ -3,9 +3,12 @@ package com.ecommerce.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.ecommerce.model.Product;
 import com.ecommerce.repository.ProductRepository;
 
+@Service
 public class ProductService {
   public ProductRepository productRepository;
 
